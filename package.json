@@ -6,18 +6,33 @@
   "module": "dist/pak2.modern.js",
   "types": "dist/pak2.d.ts",
   "scripts": {
-    "test": "ts-node test.ts",
+    "run": "ts-node example.ts",
+    "test": "ava",
     "build": "microbundle build pak2.ts -f modern,cjs",
-    "prepublisOnly": "yarn build"
+    "prepublisOnly": "yarn test && yarn build"
   },
   "repository": "https://github.com/yuta0801/pak2.git",
   "author": "yuta0801 <yuta20030801@icloud.com>",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^2.4.0",
     "microbundle": "^0.12.0-next.6",
-    "ts-node": "^8.4.1"
+    "node-pty": "^0.9.0",
+    "resolve-bin": "^0.4.0",
+    "strip-ansi": "^6.0.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
 }
