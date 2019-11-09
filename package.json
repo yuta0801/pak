@@ -1,0 +1,22 @@
+{
+  "name": "pak2",
+  "version": "0.0.0",
+  "description": "Press any key to anything...",
+  "main": "dist/pak2.js",
+  "module": "dist/pak2.modern.js",
+  "types": "dist/pak2.d.ts",
+  "scripts": {
+    "test": "ts-node test.ts",
+    "build": "microbundle build pak2.ts -f modern,cjs"
+  },
+  "repository": "https://github.com/yuta0801/pak2.git",
+  "author": "yuta0801 <yuta20030801@icloud.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.12.0-next.6",
+    "ts-node": "^8.4.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
