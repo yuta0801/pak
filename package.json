@@ -1,6 +1,6 @@
 {
   "name": "pak2",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Press any key to anything...",
   "main": "dist/pak2.js",
   "module": "dist/pak2.modern.js",
